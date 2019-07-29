@@ -1,0 +1,15 @@
+@users.each do
+  {
+    name: @users.name,
+    # last_name: @users.last_name,
+    # email: @users.email,
+    # birth_date: @users.birthday,
+    # height: @users.height,
+    # weight: @users.weight,
+    # username: @users.user_name,
+    # password: @users.password,
+    # address: @users,
+    # gym: @users
+  }
+
+end
