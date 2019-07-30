@@ -1,15 +1,15 @@
-@users.each do
+@users.map do |user|
   {
-    name: @users.name,
-    # last_name: @users.last_name,
-    # email: @users.email,
-    # birth_date: @users.birthday,
-    # height: @users.height,
-    # weight: @users.weight,
-    # username: @users.user_name,
-    # password: @users.password,
-    # address: @users,
-    # gym: @users
+    first_name: user.first_name,
+    last_name: user.last_name,
+    email: user.email,
+    birth_date: user.birth_date,
+    height: user.height,
+    weight: user.weight,
+    username: user.user_name,
+    password: user.password,
+    address: user.address,
+    gym: user.gym
   }
 
 end
