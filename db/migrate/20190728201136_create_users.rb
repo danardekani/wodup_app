@@ -14,6 +14,7 @@ class CreateUsers < ActiveRecord::Migration[6.0]
       t.string :address
       t.string :email
       t.string :gym
+      
 
       t.timestamps
     end
