@@ -15,11 +15,13 @@ include Faker
     email: Faker::Internet.email,
     birth_date: Faker::Date.birthday,
     height: Faker::Measurement.height,
-    weight: Faker::Measurement.weight,
+    weight: Faker::Measurement.weight,  
     user_name: Faker::Internet.username,
     password: Faker::Internet.password,
     address: Faker::Address.full_address,
-    gym: Faker::Company.profession
+    business: Faker::TvShows::Seinfeld.business
+    # gym: Faker::Seinfeld.business
+    # gym: Faker::Company.profession
   )
 end
 

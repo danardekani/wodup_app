@@ -9,7 +9,7 @@
     username: user.user_name,
     password: user.password,
     address: user.address,
-    gym: user.gym
+    gym: user.business,
   }
 
 end

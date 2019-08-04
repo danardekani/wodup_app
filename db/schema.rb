@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_01_011945) do
+ActiveRecord::Schema.define(version: 2019_08_04_194713) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -31,7 +31,12 @@ ActiveRecord::Schema.define(version: 2019_08_01_011945) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "new_columns", force: :cascade do |t|
+  end
+
   create_table "user_workouts", force: :cascade do |t|
+    t.integer "workout_id"
+    t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -49,16 +54,15 @@ ActiveRecord::Schema.define(version: 2019_08_01_011945) do
     t.string "instagram_url"
     t.string "address"
     t.string "email"
-    t.string "gym"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "gender"
+    t.string "business"
   end
 
   create_table "workouts", force: :cascade do |t|
     t.string "name"
     t.string "workout_type"
-    t.integer "workout_id"
     t.integer "weight_id"
     t.string "reps_id"
     t.text "notes_id"
