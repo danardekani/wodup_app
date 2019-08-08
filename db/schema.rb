@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_04_194713) do
+ActiveRecord::Schema.define(version: 2019_08_08_005238) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -35,10 +35,10 @@ ActiveRecord::Schema.define(version: 2019_08_04_194713) do
   end
 
   create_table "user_workouts", force: :cascade do |t|
-    t.integer "workout_id"
-    t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "workout_id"
+    t.integer "user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -48,7 +48,9 @@ ActiveRecord::Schema.define(version: 2019_08_04_194713) do
     t.string "height"
     t.string "weight"
     t.string "user_name"
-    t.string "password"
+    t.string "gender"
+    t.string "business"
+    t.string "password_digest"
     t.string "facebook_url"
     t.string "twitter_url"
     t.string "instagram_url"
@@ -56,8 +58,6 @@ ActiveRecord::Schema.define(version: 2019_08_04_194713) do
     t.string "email"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "gender"
-    t.string "business"
   end
 
   create_table "workouts", force: :cascade do |t|
