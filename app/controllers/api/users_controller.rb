@@ -15,14 +15,14 @@ class Api::UsersController < ApplicationController
       height: params[:height],
       weight: params[:weight],
       user_name: params[:user_name],
-      password_digest: params[:password],
+      password: params[:password],
       facebook_url: params[:facebook_url],
       twitter_url: params[:twitter_url],
       instagram_url: params[:instagram_url],
       address: params[:address],
       email: params[:email]
     ) 
-    if @user.save
+    if @user.save!
       render 'successful.json.jb'
     else
       render 'unsuccessful.json.jb'
