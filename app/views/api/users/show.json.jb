@@ -1,0 +1,11 @@
+  {
+    first_name: @user.first_name,
+    last_name: @user.last_name,
+    email: @user.email,
+    birth_date: @user.birth_date,
+    height: @user.height,
+    weight: @user.weight,
+    username: @user.user_name,
+    address: @user.address,
+    gym: @user.business,
+  }

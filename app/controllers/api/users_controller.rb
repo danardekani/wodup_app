@@ -1,9 +1,15 @@
 class Api::UsersController < ApplicationController
+  # before_action :authenticate_user
 
-#view all users in WodUp
+#View all users in WodUp
   def index
     @users = User.all
     render 'index.json.jb'
+  end
+
+  def show
+    @user = current_user.user 
+    render 'show.json.jb'
   end
 
 #Create a new user (sign up page)
@@ -23,9 +29,9 @@ class Api::UsersController < ApplicationController
       email: params[:email]
     ) 
     if @user.save!
-      render 'successful.json.jb'
+      render 'successful.json.jb', status: :created
     else
-      render 'unsuccessful.json.jb'
+      render 'unsuccessful.json.jb', status: :bad_request
     end
   end
 end

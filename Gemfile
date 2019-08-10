@@ -44,6 +44,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'http'
 gem 'rack-cors'
 gem 'jb'
-# gem 'faker', '~> 1.9', '>= 1.9.1'
 gem 'faker', '~> 1.9', '>= 1.9.4'
 gem 'jwt'
+gem 'bootstrap', '~> 4.3.1'

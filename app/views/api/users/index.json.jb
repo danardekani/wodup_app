@@ -11,5 +11,4 @@
     address: user.address,
     gym: user.business,
   }
-
 end
