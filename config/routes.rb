@@ -14,6 +14,9 @@ Rails.application.routes.draw do
     post '/users' => 'users#create'
 
     #Authenticate user login
-    post "/sessions" => "sessions#create"
+    post '/sessions' => 'sessions#create'
+
+    #Users can add new workouts to their profile
+    post '/workouts' => 'workouts#create'
   end
 end
