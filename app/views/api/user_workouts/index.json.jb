@@ -1,0 +1,8 @@
+@user_workouts.map do |user_workout|
+  {
+    weight: user_workout.weight,
+    reps: user_workout.reps,
+    notes: user_workout.notes,
+    time: user_workout.time
+  }
+end

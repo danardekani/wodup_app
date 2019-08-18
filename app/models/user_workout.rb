@@ -1,4 +1,4 @@
 class UserWorkout < ApplicationRecord
-  belongs_to :users
-  belongs_to :workouts  
+  belongs_to :user
+  belongs_to :workout
 end

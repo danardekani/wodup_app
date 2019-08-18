@@ -16,6 +16,12 @@ Rails.application.routes.draw do
     #Authenticate user login
     post '/sessions' => 'sessions#create'
 
+    #View all workout names and workout types
+    get '/workouts' => 'workouts#index'
+
+    #View all workout weihgts, reps, notes, and times
+    # get '/user_workouts' => 'user_workouts#index'
+
     #Users can add new workouts to their profile
     post '/workouts' => 'workouts#create'
   end
