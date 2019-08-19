@@ -13,7 +13,7 @@ class Api::WorkoutsController < ApplicationController
       )
     if @workout.save!
       @userworkout = UserWorkout.new(
-      weight: [:weight],
+      weight: params[:weight],
       reps: params[:reps],
       notes: params[:notes],
       time: params[:time],
