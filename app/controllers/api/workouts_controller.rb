@@ -2,10 +2,12 @@ class Api::WorkoutsController < ApplicationController
 
   def index
     @workouts = Workout.all
+    p "********************"
+    p 'hello'
+    p "********************"
     render 'index.json.jb'
-
   end
-
+  
   def create
     @workout = Workout.new(
       name: params[:name],

@@ -24,5 +24,8 @@ Rails.application.routes.draw do
 
     #Users can add new workouts to their profile
     post '/workouts' => 'workouts#create'
+
+    #Leaderboard 
+    get '/user_workouts' => 'user_workouts#index'
   end
 end
