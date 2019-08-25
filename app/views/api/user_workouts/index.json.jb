@@ -3,9 +3,9 @@
     first_name: user_workout.user.first_name,
     last_name: user_workout.user.last_name,
     weight: user_workout.weight,
-    name: user_workout.workout.name
-    # reps: user_workout.reps,
-    # notes: user_workout.notes,
-    # time: user_workout.time
+    name: user_workout.workout.name,
+    reps: user_workout.reps,
+    notes: user_workout.notes,
+    time: user_workout.time
   }
 end   
