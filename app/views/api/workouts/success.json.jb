@@ -1,4 +1,4 @@
-  {
-    name: @workout.name,
-    workout_type: @workout.workout_type
-  }
+{
+  name: @userworkout.name,
+  workout_type: @userworkout.workout_type
+}
