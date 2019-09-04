@@ -22,6 +22,7 @@ class Api::UsersController < ApplicationController
       weight: params[:weight],
       user_name: params[:user_name],
       password: params[:password],
+      password_confirmation: params[:password_confirmation],
       facebook_url: params[:facebook_url],
       twitter_url: params[:twitter_url],
       instagram_url: params[:instagram_url],

@@ -26,6 +26,6 @@ Rails.application.routes.draw do
     post '/workouts' => 'workouts#create'
 
     #Leaderboard 
-    get '/user_workouts' => 'user_workouts#index'
+    get '/user_workouts' => 'user_workouts#index'  
   end
 end
